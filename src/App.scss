@@ -1,0 +1,86 @@
+@import "./TafnitBlue.scss";
+
+.frameHeader {
+  padding: 10px 10px 40px 10px;
+  gap: 10px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(103, 103, 103, 0.1);
+  .logoImg {
+    content: $logo;
+  }
+}
+
+.rightHeader {
+  display: flex;
+}
+
+.content {
+  padding: 0px 15px 40px 15px;
+}
+
+.sidePicture {
+  width: 650px;
+  height: calc(100vh - 100px);
+  background-color: #F5F5F5;
+}
+
+/* mobile phones */
+@media only screen and (max-width: 767px) {
+    .sidePicture {
+        display: none;
+    }
+}
+
+/* laptops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .sidePicture{
+        display: none;
+    }
+}
+
+.frameLink {
+    display: flex;
+    justify-content: center;
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #0EAADC;
+    text-decoration: underline;
+    gap: 40px;
+}
+
+.frameFooter {
+    display: flex;
+    justify-content: center;
+    padding: 10px, 0px, 0px, 0px;
+    gap: 10px;
+    box-shadow: 0px 0px 10px rgba(103, 103, 103, 0.1);
+    border-radius: 4px, 4px, 0px, 0px;
+}
+
+.button {
+    height: 40px;
+    max-width: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 4px;
+    border: solid 1px #8EBBCF;
+    padding: 10px;
+}
+.primary {
+    background-color: #8EBBCF;
+}
+
+.secondary {
+    background-color: white;
+}
+    
+

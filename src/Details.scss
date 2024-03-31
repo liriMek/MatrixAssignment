@@ -1,0 +1,87 @@
+@import "./TafnitBlue.scss";
+
+.second {
+  width: 375px;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailsBody {
+  padding: 0px 15px 40px 15px;
+}
+
+.detailsTitle {
+  padding: 0px 0px 16px 0px;
+  gap: 4px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: $mainColor;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.multipleInputs {
+  display: flex;
+  gap: 12px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+  color: #7e7b7b;
+}
+
+.input {
+  padding: 10px;
+  border: solid 1px #dedede;
+  border-radius: 4px;
+  gap: 4px;
+  height: 40px;
+}
+
+.cards {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* mobile phones */
+@media only screen and (max-width: 767px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+.card {
+  flex: 1 1 0;
+  box-shadow: 0px 0px 10px rgba(103, 103, 103, 0.1);
+  padding: 20px;
+}
+
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.fieldKey {
+  height: 17px;
+  font-family: "Heebo", sans-serif;
+  color: $mainColor;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.fieldValue {
+  font-family: "Heebo", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 17px;
+}
